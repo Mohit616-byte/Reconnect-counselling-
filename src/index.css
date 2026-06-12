@@ -1,0 +1,198 @@
+@import "tailwindcss";
+
+@theme {
+  /* Color Palette - Calming Psychology & Wellness */
+  --color-sage-50: #f6f7f4;
+  --color-sage-100: #e8ebe3;
+  --color-sage-200: #d1d7c7;
+  --color-sage-300: #b3bda3;
+  --color-sage-400: #95a37f;
+  --color-sage-500: #7a8b66;
+  --color-sage-600: #5f6e4f;
+  --color-sage-700: #4a5640;
+  --color-sage-800: #3d4636;
+  --color-sage-900: #343b2f;
+
+  --color-lavender-50: #f8f6fc;
+  --color-lavender-100: #f0ecf8;
+  --color-lavender-200: #e3dbf2;
+  --color-lavender-300: #cec0e8;
+  --color-lavender-400: #b49dd9;
+  --color-lavender-500: #9b7cc9;
+  --color-lavender-600: #8560b5;
+  --color-lavender-700: #724fa0;
+  --color-lavender-800: #5f4284;
+  --color-lavender-900: #50386c;
+
+  --color-beige-50: #fdfbf7;
+  --color-beige-100: #faf5eb;
+  --color-beige-200: #f4e9d4;
+  --color-beige-300: #ebd8b6;
+  --color-beige-400: #e0c190;
+  --color-beige-500: #d4a96c;
+  --color-beige-600: #c48e50;
+  --color-beige-700: #a47342;
+  --color-beige-800: #855d3b;
+  --color-beige-900: #6d4e33;
+
+  --color-gold-50: #fefdf4;
+  --color-gold-100: #fdf9e0;
+  --color-gold-200: #fbf0b8;
+  --color-gold-300: #f7e280;
+  --color-gold-400: #f2d04a;
+  --color-gold-500: #e8b930;
+  --color-gold-600: #c99320;
+  --color-gold-700: #a36e1c;
+  --color-gold-800: #86571e;
+  --color-gold-900: #72481f;
+
+  --color-warm-50: #fefdfb;
+  --color-warm-100: #fdf9f3;
+  --color-warm-200: #faf1e4;
+  --color-warm-300: #f5e5cf;
+  --color-warm-400: #eed4b2;
+  --color-warm-500: #e5c094;
+  --color-warm-600: #d9a672;
+  --color-warm-700: #c48a52;
+  --color-warm-800: #a37044;
+  --color-warm-900: #865c3b;
+
+  /* Font families */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  /* Custom animations */
+  --animate-fade-in: fade-in 0.6s ease-out;
+  --animate-slide-up: slide-up 0.6s ease-out;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-soft: pulse-soft 3s ease-in-out infinite;
+}
+
+/* Custom keyframes */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: var(--font-body);
+  color: #3d4636;
+  background-color: #fdfbf7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #faf5eb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b3bda3;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #95a37f;
+}
+
+/* Selection styling */
+::selection {
+  background-color: #e3dbf2;
+  color: #50386c;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-dark {
+  background: rgba(61, 70, 54, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Gradient backgrounds */
+.gradient-sage {
+  background: linear-gradient(135deg, #f6f7f4 0%, #e8ebe3 100%);
+}
+
+.gradient-lavender {
+  background: linear-gradient(135deg, #f8f6fc 0%, #f0ecf8 100%);
+}
+
+.gradient-warm {
+  background: linear-gradient(135deg, #fdfbf7 0%, #faf5eb 100%);
+}
+
+.gradient-hero {
+  background: linear-gradient(135deg, #f6f7f4 0%, #f8f6fc 30%, #fdfbf7 60%, #faf5eb 100%);
+}
+
+.gradient-cta {
+  background: linear-gradient(135deg, #7a8b66 0%, #5f6e4f 50%, #4a5640 100%);
+}
+
+/* Text gradient */
+.text-gradient {
+  background: linear-gradient(135deg, #5f6e4f, #724fa0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -12px rgba(61, 70, 54, 0.15);
+}
+
+/* Section divider */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d1d7c7, transparent);
+}
+
+/* Floating animation for decorative elements */
+.float-element {
+  animation: float 6s ease-in-out infinite;
+}
+
+.float-element-delayed {
+  animation: float 6s ease-in-out infinite;
+  animation-delay: 2s;
+}
