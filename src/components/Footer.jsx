@@ -1,4 +1,5 @@
-import { FiPhone, FiMail, FiMessageCircle, FiInstagram, FiLinkedin, FiFacebook, FiTwitter } from 'react-icons/fi';
+import { FiPhone, FiMail, FiMessageCircle, FiInstagram, FiLinkedin } from 'react-icons/fi';
+import Logo from './Logo';
 
 const quickLinks = [
   { label: 'Home', href: '#home' },
@@ -19,10 +20,16 @@ const services = [
 ];
 
 const socials = [
-  { icon: FiInstagram, href: '#', label: 'Instagram' },
-  { icon: FiFacebook, href: '#', label: 'Facebook' },
-  { icon: FiLinkedin, href: '#', label: 'LinkedIn' },
-  { icon: FiTwitter, href: '#', label: 'Twitter' },
+  {
+    icon: FiInstagram,
+    href: 'https://www.instagram.com/onairpritika?utm_source=qr&igsh=bThiaGs2b3R4M251',
+    label: 'Instagram',
+  },
+  {
+    icon: FiLinkedin,
+    href: 'https://www.linkedin.com/in/pritika-sharma-5b4758213/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bfc7AAPynSe2eNqwxYIiS2g%3D%3D',
+    label: 'LinkedIn',
+  },
 ];
 
 export default function Footer() {
@@ -33,10 +40,10 @@ export default function Footer() {
           {/* ───── Column 1 · Brand ───── */}
           <div className="space-y-5">
             <div>
-              <h3 className="font-heading text-2xl font-semibold tracking-tight">
-                Prithika Sharma
-              </h3>
-              <p className="text-sage-300 text-sm mt-1">Counseling Psychologist</p>
+              <a href="#home">
+                <Logo className="h-10 w-auto" variant="light" />
+              </a>
+              <p className="text-sage-300 text-sm mt-2">Counseling Psychologist</p>
             </div>
 
             <p className="text-sage-300/90 text-sm leading-relaxed">
@@ -50,6 +57,8 @@ export default function Footer() {
                 <a
                   key={label}
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={label}
                   className="w-9 h-9 rounded-full border border-sage-600 flex items-center justify-center text-sage-300 hover:bg-white hover:text-sage-800 hover:border-white transition-all duration-300"
                 >
@@ -99,15 +108,15 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <FiPhone className="w-5 h-5 text-sage-400 mt-0.5 shrink-0" />
-                <span className="text-sage-300 text-sm">[Phone Number]</span>
+                <span className="text-sage-300 text-sm">[+91 7417293592]</span>
               </li>
               <li className="flex items-start gap-3">
                 <FiMail className="w-5 h-5 text-sage-400 mt-0.5 shrink-0" />
-                <span className="text-sage-300 text-sm">[Email Address]</span>
+                <span className="text-sage-300 text-sm">[jainpritika826@gmail.com]</span>
               </li>
               <li className="flex items-start gap-3">
                 <FiMessageCircle className="w-5 h-5 text-sage-400 mt-0.5 shrink-0" />
-                <span className="text-sage-300 text-sm">[WhatsApp Number]</span>
+                <span className="text-sage-300 text-sm">[+91 7417293592]</span>
               </li>
             </ul>
           </div>
@@ -116,7 +125,7 @@ export default function Footer() {
         {/* ───── Divider + Copyright ───── */}
         <div className="border-t border-sage-700 mt-12 pt-8 text-center">
           <p className="text-sage-400 text-sm">
-            © 2026 Prithika Sharma. All Rights Reserved. | Designed and developed by <a href="https://monkovatechnologies.com/">Monkova Technologies</a>
+            © 2026 Reconnect Counselling. All Rights Reserved. | Designed and developed by <a href="https://monkovatechnologies.com/">Monkova Technologies</a>
           </p>
         </div>
       </div>

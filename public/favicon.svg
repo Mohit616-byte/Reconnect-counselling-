@@ -1,10 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-  <defs>
-    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#7a8b66"/>
-      <stop offset="100%" stop-color="#9b7cc9"/>
-    </linearGradient>
-  </defs>
-  <circle cx="24" cy="24" r="22" fill="url(#g)" opacity="0.9"/>
-  <text x="24" y="32" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="700" fill="white">P</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- 1. Sage Green Outer Circular Arc -->
+  <path
+    d="M24 6.5 C14.3 6.5, 6.5 14.3, 6.5 24 C6.5 31.8, 11.6 38.3, 18.5 40.5"
+    stroke="#7a8b66"
+    stroke-width="1.8"
+    fill="none"
+    stroke-linecap="round"
+  />
+
+  <!-- 2. Supporting Hand (Navy Blue) -->
+  <path
+    d="M12.5 32 C12.5 35.5, 17.5 39, 24 39 C27.5 39, 30.5 37, 32.5 34 C28.5 36.5, 23.5 36.5, 18.5 35 C15.5 34, 13.5 32.5, 12.5 32 Z"
+    fill="#2d4a5d"
+  />
+
+  <!-- 3. Left Abstract Figure (Sage Green) -->
+  <circle cx="19.5" cy="14" r="2.2" fill="#7a8b66" />
+  <path
+    d="M19.5 17.5 C16 17.5, 13.5 21, 13.5 25.5 C13.5 30, 16.5 34, 20.5 34 C18 29.5, 19.5 25, 24 23.5 C21.5 21, 20.5 18.5, 19.5 17.5 Z"
+    fill="#7a8b66"
+  />
+
+  <!-- 4. Right Abstract Figure (Navy Blue) -->
+  <circle cx="28.5" cy="14" r="2.2" fill="#2d4a5d" />
+  <path
+    d="M28.5 17.5 C32 17.5, 34.5 21, 34.5 25.5 C34.5 30, 31.5 34, 27.5 34 C30 29.5, 28.5 25, 24 23.5 C26.5 21, 27.5 18.5, 28.5 17.5 Z"
+    fill="#2d4a5d"
+  />
+
+  <!-- 5. Upper Right Branch Stem (Sage Green) -->
+  <path
+    d="M24 6.5 C28 6.5, 33 9.5, 36.5 14.5"
+    stroke="#7a8b66"
+    stroke-width="1.5"
+    fill="none"
+    stroke-linecap="round"
+  />
+
+  <!-- 6. Leaves (Sage Green & Terracotta Accent Leaf) -->
+  <path d="M26.5 5 C26 3, 27.5 1.5, 29.5 2 C29.5 4, 28 5.5, 26.5 5 Z" fill="#7a8b66" />
+  <path d="M30.5 6 C31 4, 33 3, 34.5 4 C34 6, 32 7, 30.5 6 Z" fill="#7a8b66" />
+  <path d="M33.5 8.5 C35 7, 37 7, 38 8.5 C36.5 10, 34.5 10, 33.5 8.5 Z" fill="#7a8b66" />
+  <path d="M36 11.5 C38 10.5, 40 11.5, 40.5 13 C39 14, 37 13, 36 11.5 Z" fill="#7a8b66" />
+  <!-- Muted Terracotta Red Accent Leaf (Under 5% of design) -->
+  <path d="M36.5 14.5 C38.5 15, 39.5 17.5, 39.5 19.5 C37.5 19.5, 36.5 17, 36.5 14.5 Z" fill="#C97C6D" />
 </svg>

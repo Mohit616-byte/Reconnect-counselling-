@@ -16,7 +16,7 @@ import CTABanner from './sections/CTABanner'
 function App() {
   useEffect(() => {
     // Update page title dynamically
-    document.title = 'Prithika Sharma | Counseling Psychologist & Mental Wellness Expert'
+    document.title = 'Reconnect Counselling | Counseling Psychologist & Mental Wellness Expert'
   }, [])
 
   return (

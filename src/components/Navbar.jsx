@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Logo from './Logo';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
@@ -28,25 +29,16 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
-        scrolled
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${scrolled
           ? 'bg-white/90 backdrop-blur-lg shadow-lg'
           : 'bg-transparent'
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* ───── Logo ───── */}
-          <a href="#home" className="flex flex-col leading-tight group">
-            <span className="font-heading text-2xl font-semibold text-sage-800 tracking-tight flex items-center gap-1.5">
-              Prithika Sharma
-              <span className="text-lg opacity-80 group-hover:rotate-12 transition-transform duration-300">
-                🌿
-              </span>
-            </span>
-            <span className="text-[11px] tracking-widest uppercase text-sage-500 font-body">
-              Counseling Psychologist
-            </span>
+          <a href="#home" className="flex items-center group">
+            <Logo className="h-11 w-auto" />
           </a>
 
           {/* ───── Desktop Links ───── */}
@@ -76,19 +68,16 @@ export default function Navbar() {
             aria-label="Toggle menu"
           >
             <span
-              className={`block h-[2px] w-6 rounded-full bg-sage-800 transition-all duration-300 origin-center ${
-                mobileOpen ? 'rotate-45 translate-y-[7px]' : ''
-              }`}
+              className={`block h-[2px] w-6 rounded-full bg-sage-800 transition-all duration-300 origin-center ${mobileOpen ? 'rotate-45 translate-y-[7px]' : ''
+                }`}
             />
             <span
-              className={`block h-[2px] w-6 rounded-full bg-sage-800 transition-all duration-300 ${
-                mobileOpen ? 'opacity-0 scale-0' : ''
-              }`}
+              className={`block h-[2px] w-6 rounded-full bg-sage-800 transition-all duration-300 ${mobileOpen ? 'opacity-0 scale-0' : ''
+                }`}
             />
             <span
-              className={`block h-[2px] w-6 rounded-full bg-sage-800 transition-all duration-300 origin-center ${
-                mobileOpen ? '-rotate-45 -translate-y-[7px]' : ''
-              }`}
+              className={`block h-[2px] w-6 rounded-full bg-sage-800 transition-all duration-300 origin-center ${mobileOpen ? '-rotate-45 -translate-y-[7px]' : ''
+                }`}
             />
           </button>
         </div>
