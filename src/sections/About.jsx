@@ -15,7 +15,7 @@ const About = () => {
     <section id="about" className="gradient-lavender">
       <div className="py-20 px-4 max-w-7xl mx-auto">
         <SectionHeading
-          title="About Prithika Sharma"
+          title="About PRITIKA SHARMA"
           subtitle="A journey of compassion, healing, and transformation"
         />
 
@@ -31,7 +31,7 @@ const About = () => {
             <div className="aspect-[3/4] max-w-md w-full mx-auto rounded-3xl shadow-xl overflow-hidden ring-4 ring-lavender-200/50 ring-offset-4 ring-offset-lavender-50">
               <img
                 src="/prithika-portrait.jpg"
-                alt="Prithika Sharma — About"
+                alt="Pritika Sharma — About"
                 className="w-full h-full object-cover object-top"
                 loading="lazy"
               />
@@ -61,7 +61,7 @@ const About = () => {
             className="space-y-6"
           >
             <p className="text-sage-700 leading-relaxed text-lg">
-              PRITIKA SHARMA is a compassionate Mental Health Expert, Counseling
+              Pritika Sharma is a compassionate Mental Health Expert, Counseling
               Psychologist, Holistic Wellness Guide, and Psychiatry Nutrition
               Specialist with over 5 years of experience supporting individuals
               through emotional challenges, anxiety, relationship concerns, stress,
