@@ -148,7 +148,7 @@ I will attach the payment screenshot in the next message.`
               </p>
               <div className="bg-sage-50 rounded-xl p-4 flex flex-col items-center">
                 <img
-                  src="/gpay-qr.jpg"
+                  src="/gpay-qr.jpeg"
                   alt="GPay QR Code - Scan to pay"
                   className="w-56 h-auto rounded-lg"
                 />
@@ -181,11 +181,10 @@ I will attach the payment screenshot in the next message.`
                     if (errors.name) setErrors((prev) => ({ ...prev, name: '' }))
                   }}
                   placeholder="Enter your full name"
-                  className={`w-full px-4 py-2.5 rounded-xl border ${
-                    errors.name
+                  className={`w-full px-4 py-2.5 rounded-xl border ${errors.name
                       ? 'border-red-400 focus:border-red-500 focus:ring-red-200'
                       : 'border-sage-200 focus:border-sage-400 focus:ring-sage-200'
-                  } focus:ring-2 outline-none transition bg-sage-50/50 font-body text-sm`}
+                    } focus:ring-2 outline-none transition bg-sage-50/50 font-body text-sm`}
                 />
                 {errors.name && (
                   <span className="text-red-500 text-xs mt-1 block">{errors.name}</span>
@@ -208,11 +207,10 @@ I will attach the payment screenshot in the next message.`
                     if (errors.phone) setErrors((prev) => ({ ...prev, phone: '' }))
                   }}
                   placeholder="+91 XXXXX XXXXX"
-                  className={`w-full px-4 py-2.5 rounded-xl border ${
-                    errors.phone
+                  className={`w-full px-4 py-2.5 rounded-xl border ${errors.phone
                       ? 'border-red-400 focus:border-red-500 focus:ring-red-200'
                       : 'border-sage-200 focus:border-sage-400 focus:ring-sage-200'
-                  } focus:ring-2 outline-none transition bg-sage-50/50 font-body text-sm`}
+                    } focus:ring-2 outline-none transition bg-sage-50/50 font-body text-sm`}
                 />
                 {errors.phone && (
                   <span className="text-red-500 text-xs mt-1 block">{errors.phone}</span>

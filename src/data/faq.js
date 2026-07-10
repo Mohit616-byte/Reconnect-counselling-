@@ -45,7 +45,7 @@ export const faqs = [
     id: 8,
     question: "What is your cancellation and rescheduling policy?",
     answer:
-      "We understand that life can be unpredictable. You can reschedule or cancel your session up to 12 hours before the scheduled time at no charge. Cancellations made within 12 hours of the session may be subject to a partial fee. Package sessions can be rescheduled flexibly within the package validity period.",
+      "No, booked sessions cannot be canceled. However, you may reschedule your session to another available date or time.",
   },
   {
     id: 9,

@@ -61,7 +61,7 @@ const About = () => {
             className="space-y-6"
           >
             <p className="text-sage-700 leading-relaxed text-lg">
-              Prithika Sharma is a compassionate Mental Health Expert, Counseling
+              PRITIKA SHARMA is a compassionate Mental Health Expert, Counseling
               Psychologist, Holistic Wellness Guide, and Psychiatry Nutrition
               Specialist with over 5 years of experience supporting individuals
               through emotional challenges, anxiety, relationship concerns, stress,
