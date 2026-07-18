@@ -70,7 +70,7 @@ const Contact = () => {
 
     if (!validate()) return
 
-    const whatsappMessage = `Hello Prithika Sharma,
+    const whatsappMessage = `Hello Pritika Sharma,
 
 New Therapy Inquiry
 
@@ -173,7 +173,7 @@ ${formData.message.trim()}`
                 Call Now
               </motion.a>
               <motion.a
-                href="mailto:hello@prithikasharma.com"
+                href="mailto:jainpritika826@gmail.com"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-lavender-600 text-white rounded-full px-6 py-3 font-medium inline-flex items-center gap-2 shadow-md"
