@@ -120,8 +120,8 @@ const Hero = () => {
             {/* Portrait */}
             <div className="aspect-[3/4] max-w-md w-full mx-auto rounded-3xl shadow-xl relative overflow-hidden ring-4 ring-sage-200/50 ring-offset-4 ring-offset-beige-50">
               <img
-                src="/prithika-portrait.jpg"
-                alt="Prithika Sharma — Counseling Psychologist"
+                src="/pritika-portrait.jpg"
+                alt="Pritika Sharma — Counseling Psychologist"
                 className="w-full h-full object-cover object-top"
                 loading="eager"
                 fetchPriority="high"
