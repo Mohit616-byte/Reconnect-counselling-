@@ -30,7 +30,7 @@ const About = () => {
           >
             <div className="aspect-[3/4] max-w-md w-full mx-auto rounded-3xl shadow-xl overflow-hidden ring-4 ring-lavender-200/50 ring-offset-4 ring-offset-lavender-50">
               <img
-                src="/prithika-portrait.jpg"
+                src="/pritika-portrait.jpg"
                 alt="Pritika Sharma — About"
                 className="w-full h-full object-cover object-top"
                 loading="lazy"

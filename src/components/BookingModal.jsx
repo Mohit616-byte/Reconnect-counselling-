@@ -56,7 +56,7 @@ const BookingModal = ({ isOpen, onClose, session }) => {
   const handlePaymentComplete = () => {
     if (!validate()) return
 
-    const message = `Hello Prithika Sharma,
+    const message = `Hello Pritika Sharma,
 
 I've completed the payment for a therapy session. Here are my details:
 
